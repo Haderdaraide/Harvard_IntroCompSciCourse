@@ -1,7 +1,7 @@
 # Harvard_IntroCompSciCourse
 This is my repository to store my projects and homework assignments for my second intro course. I decided to take a second intro to really solidify a base, and the projects/technology seemed pretty interesting! 
 
-# pset1 
+## pset1 
 
 The first pset was really to introduce me to the world of C/Linux
 
@@ -10,16 +10,16 @@ Objectives:
   2. Start thinking more carefully
   3. Solve some problems in C
 
-Hello.c 
+### Hello.c 
 
   a hello world! And a hello to C!
   
-water.c
+### water.c
 
   a program that prompts the user for the length of shower (as a positive int), and then prints
   the equivalent number of bottles of water they are using! Take shorter showers!
   
-mario.c
+### mario.c
 
   a program that 'recreates' the half-pyramid using hashes(#) for blocks. The user is prompted for the half-pyramid's
   height, a non negative integer no greater than 23. If user fails to provide what's needed, they are re-prompted
