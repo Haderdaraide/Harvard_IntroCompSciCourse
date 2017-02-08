@@ -10,16 +10,16 @@ Objectives:
   2. Start thinking more carefully
   3. Solve some problems in C
 
-### Hello.c 
+#### Hello.c 
 
   a hello world! And a hello to C!
   
-### water.c
+#### water.c
 
   a program that prompts the user for the length of shower (as a positive int), and then prints
   the equivalent number of bottles of water they are using! Take shorter showers!
   
-### mario.c
+#### mario.c
 
   a program that 'recreates' the half-pyramid using hashes(#) for blocks. The user is prompted for the half-pyramid's
   height, a non negative integer no greater than 23. If user fails to provide what's needed, they are re-prompted
@@ -39,16 +39,16 @@ Objectives:
   1. Become better acquainted with functions and libraries
   2. Dabble in cryptography
   
-### initials.c
+#### initials.c
 
   A program that prompts hte user for their name, and then outputs their initials in uppercase
   no spaces or periods, and then followed by a new line. 
 
-### caesar.c
+#### caesar.c
 
   A program that encrpyts a message using Caesar's cipher! A secret!
 
-### vigenere.c
+#### vigenere.c
 
   A program that encrypts a message using Vigenere's Cipher, which improves upon Caesar's by encrypting messages
   using a sequence of keys. If p is some plaintext and k is a keyword.
@@ -64,13 +64,13 @@ Objectives:
   3. Empower you with Makefiles
   4. Implement a party favor
   
-### Find
+#### Find
 
 Prompts user for as many as MAX values until EOF is reached, 
 then proceeds to search that "haystack" of values for given needle.
 helpers files and make included. 
 
-### Fifteen
+#### Fifteen
 
 Implements Game of Fifteen (generalized to d x d).
 Usage: fifteen d
@@ -88,15 +88,15 @@ Objectives:
   3. Introduce you to computer scientists
   4. Help Mr. Boddy
   
-### BMP
+#### BMP
 
 Copies a BMP piece by piece, uncover the hidden image!
 
-### Resize
+#### Resize
 
 a program called resize that resizes 24-bit uncompressed BMPs by a factor of n. The program accepts exactly three command-line arguments, per the below usage, whereby the first (n) must be a positive integer less than or equal to 100, the second the name of the file to be resized, and the third the name of the resized version to be written.
 
-### Recover
+#### Recover
 
 Professor Malan snapped a bunch of people's photos on campus, but lost all the data! He thought it was "deleted",
 but it was more so "forgotten". The CF card says it was "blank", but we built a program that recovers all of the 
