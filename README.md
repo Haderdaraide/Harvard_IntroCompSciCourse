@@ -79,6 +79,28 @@ where d must be in [DIM_MIN,DIM_MAX]
   
 ## pset4
   
+  The problem set focuses on working with images, recovering images, uncovering hidden
+  images. 
+  
+Objectives:
+  1. Acquaint you with file I/O
+  2. Get you more comfortable with data structures, hexadecimal, and pointers.
+  3. Introduce you to computer scientists
+  4. Help Mr. Boddy
+  
+### BMP
+
+Copies a BMP piece by piece, uncover the hidden image!
+
+### Resize
+
+a program called resize that resizes 24-bit uncompressed BMPs by a factor of n. The program accepts exactly three command-line arguments, per the below usage, whereby the first (n) must be a positive integer less than or equal to 100, the second the name of the file to be resized, and the third the name of the resized version to be written.
+
+### Recover
+
+Professor Malan snapped a bunch of people's photos on campus, but lost all the data! He thought it was "deleted",
+but it was more so "forgotten". The CF card says it was "blank", but we built a program that recovers all of the 
+"deleted" images. 
   
 ## pset5
   
