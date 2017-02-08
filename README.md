@@ -33,10 +33,49 @@ Objectives:
   
 ## pset2
   
+The second problem set had me really get better acquainted to functions and using libraries 
+  
+Objectives:
+  1. Become better acquainted with functions and libraries
+  2. Dabble in cryptography
+  
+### initials.c
+
+  A program that prompts hte user for their name, and then outputs their initials in uppercase
+  no spaces or periods, and then followed by a new line. 
+
+### caesar.c
+
+  A program that encrpyts a message using Caesar's cipher! A secret!
+
+### vigenere.c
+
+  A program that encrypts a message using Vigenere's Cipher, which improves upon Caesar's by encrypting messages
+  using a sequence of keys. If p is some plaintext and k is a keyword.
   
   
 ## pset3
   
+  The Game of Fifteen! Creates our first working game! Sorting algorithns, O(n), all included and learned this week. 
+  
+Objectives:
+  1. Accustom you to reading someone else's code
+  2. Introduce you to larger programs and programs with multiple source files
+  3. Empower you with Makefiles
+  4. Implement a party favor
+  
+### Find
+
+Prompts user for as many as MAX values until EOF is reached, 
+then proceeds to search that "haystack" of values for given needle.
+helpers files and make included. 
+
+### Fifteen
+
+Implements Game of Fifteen (generalized to d x d).
+Usage: fifteen d
+whereby the board's dimensions are to be d x d,
+where d must be in [DIM_MIN,DIM_MAX]
   
 ## pset4
   
