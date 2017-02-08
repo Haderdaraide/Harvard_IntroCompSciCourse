@@ -11,13 +11,16 @@ Objectives:
   3. Solve some problems in C
 
 Hello.c 
+
   a hello world! And a hello to C!
   
 water.c
+
   a program that prompts the user for the length of shower (as a positive int), and then prints
   the equivalent number of bottles of water they are using! Take shorter showers!
   
 mario.c
+
   a program that 'recreates' the half-pyramid using hashes(#) for blocks. The user is prompted for the half-pyramid's
   height, a non negative integer no greater than 23. If user fails to provide what's needed, they are re-prompted
   then the half-pyramid is generated making sure to align the bottom-left corner of thehalf-pyramid with the left-hand 
