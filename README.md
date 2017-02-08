@@ -103,10 +103,51 @@ but it was more so "forgotten". The CF card says it was "blank", but we built a 
 "deleted" images. 
   
 ## pset5
+
+Created a spellchecker in C! 
+
+Objectives:
+  1. Allow you to design and implement your own data structure.
+  2. Optimize your code's (real-world) running time. 
+  
+#### Dictionary
+
+Implements a dictionary's functionality.
+
+#### Speller
+
+Implemented a spell checker using dictionary's functionality
   
 ## pset6
-  
+
+A problem set that started to transition away from C into web programming. Worked and built a we  server
+that would handle and respond to requests. 
+Note: Much of this code was provided, and I implemented many of the functions with it. 
+
+Objectives:
+  1. Become familiar with HTTP
+  2. Apply familiar techniques in unfamiliar contexts
+  3. Transition from C to web programming
+
+#### Server
+
+the web server that handles requests, parses through it, provides a response. 
   
 ## pset7
-  
+
+C$50 Finance! Implemented a website via which users can "buy" and "sell" stocks. 
+
+Objectives:
+  1. Create a functional website
+  2. Utilize and implement a backend database (SQL)
+  3. Allow users to buy and sell stock, check their history, update within the database
+
+This problem set was all done via Python, Flask, Bootstrap, HTML/CSS, SQLlite
+
+#### application
+
+Within this file is the bulk of how the sever operated, using functions from the hlper, all of the templates that generated the 
+content on the web page etc within the subsequent folders/files. Really awesome project, and my friends all practiced!
+I found a pretty big bug that allowed a user to input a negative value in the "buy" section, and my friend
+gave himself 1mil extra cash! Quickly squashed that bug
   
