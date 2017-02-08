@@ -30,3 +30,22 @@ Objectives:
   to see how I thought when I was working through the problem. For now, I would like to keep them there. 
   
   
+  
+## pset2
+  
+  
+  
+## pset3
+  
+  
+## pset4
+  
+  
+## pset5
+  
+## pset6
+  
+  
+## pset7
+  
+  
