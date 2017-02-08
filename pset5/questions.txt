@@ -1,0 +1,24 @@
+0.  The longest word in the english dictionary
+1.  getrusage and struct rusage tell us how much resources were used on what ever the input is 
+2.  16 data types 
+3.  We don't have to put the entire piece of memory to check, instead we just check the pointers. It's more efficient then having to put the entire piece of memory into
+    the check or the load, etc. 
+4.  first we are including the libs, the system resource and the system time. We then include the dictionary and then undefine calculate and getrusage. We then define the dictionary
+    calculate the usage and memory in the pointers. We start main with argumemnts required, if it isn't there we return 1 (signaling it failed to get the proper inputs from the user). 
+    We then calculate the reusage struct, the bench marks, and the check. Open up the file for the text, get ready to start reading in the word and checking if it's ar eal world. 
+    print out the mispelled words: and get ready to add to it. The for loop grabs the first word/char, tests if it's EOF, and increments to the next word on next run through. 
+    It checks if it's appropriate in that it's an alphabetical character, doesn't have numbers, or is an apostrophe. If it is allowed, it will then pass to the checker incrementing each 
+    character to the word, if it's mispelled it prints it out and adds another to mispelled character to the counter. it then resets for the next word until the EOF. We are recording
+    benchmarks to check our performance a long the way, and at the end it does clean up, closing everything approprieatly, and reporting everything with benchmarks etc, returning 0 at the end. 
+5.  We are checking each character. If we just scanf we are putting the entire word in with possible apostrophes, numbers, or anything else that can be incorrect. This let's us check
+    each character at a time. We check each character rather then the entire word as a whole. 
+6.  With check and load we are only reading and not in any way modifying what is happening. Everything is modifying it, and check and load are just there to read. If we didn't use const then 
+    we run the risk of one of these being able to modify WORD or the data. We don't want that, it's meant to check using the pointers given. 
+7.  I decided to use a Trie. I thought it would be faster and I really understood it better then a hash table, I also didn't want to deal with a hash functiona at this time. While I still feel
+    it's necessary for me to learn about hash tables, I plan on incorporating it in some side projects I am going to work on. I want to utilize both trie and hash tables in the future efficeintly.
+    With my Trie each letter represented an index that had yet another newly created node within it, and the process would repeat creating a table that linked all the words together. It was great to learn
+    about!
+8.  It was pretty slow, compared to 0.8 and 0.2. and I had many, many errors. 
+9.  I cleared up everyting from segmentation faults, and processes. I changed up my Trie to efficiently load up the data, and I had to figure out as well how to unload correctly. 
+10. While I think I got a lot out of this problem set, I feel like I coudl have really used a hash table efficeintly and learned about it. In addition I could have broken up the problem into even fewer
+    functions. I think that my load function was clean, but it could have been more effectivey to speed things up. That is the area that I lost most time. 

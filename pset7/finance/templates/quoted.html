@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('quote') }}" method="GET">
+        <p class="form-group">
+            <strong>Name:</strong> {{ name }}
+        </p>
+        <p class="form-group">
+            <strong>Price:</strong> {{ price }}
+        </p>
+        <p class="form-group">
+            <strong>Symbol:</strong> {{ symbol }}
+        </p>
+    </form>
+{% endblock %}

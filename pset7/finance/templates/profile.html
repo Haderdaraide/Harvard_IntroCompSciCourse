@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('profile') }}" method="POST">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Current Cash</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in user_info %}
+                <tr>
+                    <td>{{ item["username"] }}</td>
+                    <td>{{ item["cash"] }}</td>
+                </tr>
+                {% endfor %}
+                <td colspan="4">CASH</td>
+                <!--<td>{{ users_cash }}</td>-->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"></td>
+                    <!--<td><strong>{{ cash }}</strong></td>-->
+                </tr>
+            </tfoot>
+        </table>
+        <div class="form-group">
+                <button class="btn btn-default" type="submit">Change Password</button>
+        </div>
+{% endblock %}

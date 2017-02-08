@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('quote') }}" method="GET">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for portfolio in portfolio_all %}
+                <tr>
+                    <td>{{ portfolio_all[portfolio][0] }}</td>
+                    <td>{{ portfolio_all[portfolio][1] }}</td>
+                    <td>{{ portfolio_all[portfolio][2] }}</td>
+                    <td>{{ portfolio_all[portfolio][3] }}</td>
+                    <td>{{ portfolio_all[portfolio][4] }}</td>
+                </tr>
+                {% endfor %}
+                <td colspan="4">CASH</td>
+                <td>{{ users_cash }}</td>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"></td>
+                    <td><strong>{{ cash }}</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+{% endblock %}

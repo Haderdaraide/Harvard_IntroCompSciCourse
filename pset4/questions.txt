@@ -1,0 +1,31 @@
+0.  BMP can hold 32 bit color which is big, and 4 billion+.
+    GIF (graphics interchange format) is 8 bit which is 256 different colors
+    JPEG can support 16 million different colors at 24 bits
+    PNG can also support 16 million different colors at 24 bits
+1.  GIF
+2.  With lossy compression when an image is compressed it loses bits of data, usually repeating bits, and when it is uncompressed, those bits are lost.
+    With lossless compression when an image is compressed it reduces redundant data and stores a way to recover said redundant data so when it is uncompressed that data remains intact.
+3.  JPEG is a form of lossy compression. Its great for the web when a user decides to sacrfice quality for file size etc. 
+4.  With a FAT file system the data is stored in clusters in a linked list. Those cluseters have ifnormation about each bit of data within the cluster. The cluster will have
+    a pointer that points to the next cluster of data (linked list). When you delete a file in a FAT file system it really just erasses the pointer or the address.
+    the origianl file data is still intact and the system moves that data to teh 'free storage' in portion in memory, but it's still really there. 
+5.  You can do a couple of things. Physically destroy the harddrive, but you can also replace each bit of data in memory with NUL or a 0 so that it replaces the existing data. 
+6.  stdint.h is a header file in the standard C library. It allows users to create typedefs using predefined sized
+    integer width tpes. Long etc. You can create a variable, and then you can give it a predefined size of bits/bytes it can hold.
+7.  unsigned and signed ints represent the integers size and capacity. It can hold either negative numbers or positive only numbers. Giving something uint8_t allows 8 bit 
+    size for positive numbers. it has a wider range then the signed ints that have a range including negative numbers.
+8.  Byte = 1
+    WORD = 2 bytes
+    DWORD = 4 bytes (2 WORDS)
+    LONG = 4 bytes 
+9.  The first two bytes of a BMP file is 2 ASCII characters 'B' and 'M' that lets the user/computer know that they are in fact looking at a BMP file. That is the file signature!
+10. bfsize is the size, in bytes of the bitmap it self. The bisize is the size of the structs (usually a fixed amount) for the header BMPINFOHEADERFILE
+11. The files usually read from bottom up, but if the biHeight is negative it's reversed. That means it's read from top down instead. 
+12. biBitCount
+13. If there are restrictions on the file, such as not allowing you to write or a 'read only file', it will return null. because you can't right to it! not allowed!!
+14. It's because that is the specific struct we are trying to read which is 1. We specify the size already previously, and this is how many of those sizes are we going to read, just 1 at a time. 
+    it can be different in size of bytes, but we already predefined that in the input prior, that means here is the input size we want to read, and then here are how many we will read at once. 
+15. it will add enough so that the width is equal to 4. It is currently 3 so it needs to add 1 more to get to 4. 
+16. fseek will take us to a specific point in the file, we can go straight there adjust it, change it, leave it as be, etc. It just takes us there to the exact bit if we wanted. 
+17. SEEK_CUR is the finidng the current point of the file. It will take us to the direct current point of the file we want to go to. 
+18. It's one of the CS50 teaching assistants! I think his name is Rob! 

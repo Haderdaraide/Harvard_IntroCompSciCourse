@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('history') }}" method="GET">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Action</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for transaction in history_content %}
+                <tr>
+                    <td>{{ transaction['symbol'] }}</td>
+                    <td>{{ transaction['action'] }}</td>
+                    <td>{{ transaction['num_shares'] }}</td>
+                    <td>{{ transaction['price'] }}</td>
+                    <td>{{ transaction['date'] }}</td>
+                    <td>{{ transaction['time'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}
