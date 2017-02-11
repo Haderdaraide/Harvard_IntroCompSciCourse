@@ -150,4 +150,17 @@ Within this file is the bulk of how the sever operated, using functions from the
 content on the web page etc within the subsequent folders/files. Really awesome project, and my friends all practiced!
 I found a pretty big bug that allowed a user to input a negative value in the "buy" section, and my friend
 gave himself 1mil extra cash! Quickly squashed that bug
+
+## pset8
+
+Mashup! Mashup various technologies to create a google maps rendition to show users relevant trending articles for areas they are 
+searching via Google maps! Users can drag and update the map to various locations, relevant data is then provided in a clickable format
+for users to see trending articles on cities/towns of the areas they interact with!
+
+Objective:
+  1. Use an API!
+  2. Mashup various technologies to create a functioning web app
+  3. Utilize technologies and techniques to gather, request, parse and distribute imformation
+  
+This application uses JavaScript, HTML/CSS, RSS feeds, SQL, Python, AJAX, jQuery and JSON 
   
